@@ -27,12 +27,12 @@ nav ul li {
     padding: 0 12px;
 }
 
-.brand img {
+.musicplayerlogo img {
     width: 44px;
     padding: 0 8px;
 }
 
-.brand {
+.musicplayerlogo {
     display: flex;
     align-items: center;
     font-weight: bolder;
