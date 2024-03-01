@@ -1,135 +1,173 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300&display=swap");
 
 body {
-    background-color: rgb(0, 0, 0);
-    background-image: url('images/photo-1616356607338-fd87169ecf1a.avif');
+  background-color: rgb(0, 0, 0);
+  background-image: url("images/photo-1616356607338-fd87169ecf1a.avif");
 }
 
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 nav {
-    font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 nav ul {
-    display: flex;
-    align-items: center;
-    list-style-type: none;
-    height: 65px;
-    background-color: black;
-    color: white;
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  height: 65px;
+  background-color: black;
+  color: white;
 }
 
 nav ul li {
-    padding: 0 12px;
+  padding: 0 12px;
 }
 
 .musicplayerlogo img {
-    width: 44px;
-    padding: 0 8px;
+  width: 44px;
+  padding: 0 8px;
 }
 
 .musicplayerlogo {
-    display: flex;
-    align-items: center;
-    font-weight: bolder;
-    font-size: 1.3rem;
+  display: flex;
+  align-items: center;
+  font-weight: bolder;
+  font-size: 1.3rem;
 }
 
-.container{
-    min-height: 52vh;
-    background-color: black;
-    color: white;
-   font-family: 'Varela Round', sans-serif;
-   display: flex;
-   margin: 23px auto;
-   width: 70%;
-   border-radius: 12px;
-   padding: 52px;
-   background-image: url('images/photo-1616356607338-fd87169ecf1a.avif');
+.container {
+  min-height: 52vh;
+  background-color: black;
+  color: white;
+  font-family: "Varela Round", sans-serif;
+  display: flex;
+  margin: 23px auto;
+  width: 70%;
+  border-radius: 12px;
+  padding: 52px;
+  background-image: url("images/photo-1616356607338-fd87169ecf1a.avif");
 }
 
-.bottom{
-    position: sticky;
-    bottom: 0;
-    height: 90px;
-    background-color: black;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column; 
-    
+.bottom {
+  position: sticky;
+  bottom: 0;
+  height: 90px;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-.icons{
-    margin-top: 14px; 
+.icons {
+  margin-top: 14px;
 }
-.icons i{
-    cursor: pointer;
-}
-
-#myProgressBar{
-    width: 80vw; 
-    cursor: pointer;
+.icons i {
+  cursor: pointer;
 }
 
-.songItemContainer{
-    margin-top: 74px;
+#myProgressBar {
+  width: 80vw;
+  cursor: pointer;
 }
 
-.songItem{
-    height: 50px;
-    display: flex;
-    background-color: white;
-    
-    color: black;
-    margin: 12px 0;
-    justify-content: space-between;
-    align-items: center;
-    border-radius: 34px;
+.songItemContainer {
+  margin-top: 74px;
 }
 
-.songItem img{
-    width: 43px;
-    margin: 0 23px;
-    border-radius: 34px;
+.songItem {
+  height: 50px;
+  display: flex;
+  background-color: white;
+
+  color: black;
+  margin: 12px 0;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 34px;
 }
 
-.timestamp{
-    margin: 0 23px;
+.songItem img {
+  width: 43px;
+  margin: 0 23px;
+  border-radius: 34px;
 }
 
-.timestamp i{
-    cursor: pointer;
+.timestamp {
+  margin: 0 23px;
 }
 
-.songInfo{
-    position: absolute;
-    left: 10vw;
-    font-family: 'Varela Round', sans-serif;
+.timestamp i {
+  cursor: pointer;
 }
 
-.songInfo img{
-    opacity: 0;
-    transition: opacity 0.4s ease-in;
+.songInfo {
+  position: absolute;
+  left: 10vw;
+  font-family: "Varela Round", sans-serif;
+}
+
+.songInfo img {
+  opacity: 0;
+  transition: opacity 0.4s ease-in;
 }
 
 @media only screen and (max-width: 1100px) {
-    body {
-      background-color: red;
-    }
+  body {
+    background-color: red;
   }
-
-.container > .songItem{
-    align-items: center;
 }
 
-nav ul li a{
-    text-decoration: none;
-    color: #000;
-    font-size: 14px;
-    }
+.container > .songItem {
+  align-items: center;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #000;
+  font-size: 14px;
+}
+
+.userInputForm {
+    position: fixed;
+    top: 50%;
+    right: 400px; /* Adjust as needed */
+    transform: translate(0, -50%);
+  }
+  
+  .userInputForm h2 {
+    margin-bottom: 20px;
+  }
+  
+  .userInputForm form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .userInputForm input[type="file"] {
+    margin-bottom: 10px;
+  }
+  
+  .userInputForm input[type="file"] {
+    background-color: #f0f0f0; /* Change to the color you desire */
+    /* You can also specify other styles such as border, padding, etc. */
+    border: 1px solid #ccc;
+    padding: 5px;
+  }
+  
+  .userInputForm input[type="file"]:focus {
+    /* Optionally, you can define styles for the input when it's focused */
+    outline: none; /* Removes the default focus outline */
+    border-color: #007bff; /* Change to the color you desire */
+    /* Add any additional focus styles as needed */
+  }
+  
+  h2{
+    color: antiquewhite;
+  }
